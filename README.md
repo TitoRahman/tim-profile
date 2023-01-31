@@ -26,14 +26,16 @@ Untuk Melakukan installasi lakukan sebagai berikut
 
 Install dependencies
 
-bash
-  npm install
+```bash
+npm install
+```
 
 
 Jalankan Aplikasi
 
-bash
-  npm start
+```bash
+npm start
+```
 
     
 ## Support
