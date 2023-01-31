@@ -2,7 +2,7 @@ import React from 'react'
 import ProyekCard from './components/ProyekCard'
 
 export default function Proyek() {
-  const titleStyle = 'text-white font-bold text-5xl mt-10 pb-4'
+  const titleStyle = 'text-white font-bold text-5xl mt-10 pb-1'
   const labelStyle = 'text-gray-400 text-bg'
 
   const generateCard = (n) => {
@@ -29,13 +29,13 @@ export default function Proyek() {
     return <div className={cardContainerStyle}> {generateCard(n)} </div>
   }
   return (
-    <div className= 'flex flex-col text-center bg-purple-900 pb-96 pt-20 px-20 items-center'>
+    <div className= 'flex flex-col text-center bg-dark-main pb-96 pt-20 px-20 items-center'>
       <div>
         <div className={titleStyle}>
           RECENT
         </div>
         <div className={labelStyle}>
-          lorem
+          our most recent project that we created!
         </div>
         {cardContainer(1)}
       </div>
@@ -44,7 +44,7 @@ export default function Proyek() {
           CURRENT
         </div>
         <div className={labelStyle}>
-          lorem
+          a work-in-progress project that we are currently working on!
         </div>
         {cardContainer(2)}
       </div>
@@ -53,7 +53,7 @@ export default function Proyek() {
           ALL
         </div>
         <div className={labelStyle}>
-          lorem
+          all the project that we have created
         </div>
         {cardContainer(4)}
       </div>
