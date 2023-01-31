@@ -1,9 +1,11 @@
-import React, { Component } from "react";
+import React from 'react'
 
-class Proyek extends Component {
-  render() {
-    return <div>Proyek</div>;
-  }
+export default function Proyek() {
+  return (
+    <div>
+      Proyek
+    </div>
+  )
 }
 
-export default Proyek;
+
