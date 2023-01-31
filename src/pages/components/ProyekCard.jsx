@@ -6,7 +6,7 @@ export default function ProyekCard(
         mImage="https://m1.material.io/assets/0B5ZSepuCX1xOMmo2MDlJWjdwQlU/disabled-dark.png", 
         mTag = [
             {
-                Name:'Ex1', 
+                Name:'Ex', 
                 LinkTo:'/', 
                 TextColor:'text-light-purle', 
                 BackgroundColor:'bg-dark-second'
