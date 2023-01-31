@@ -6,10 +6,11 @@ export default function ProyekCard(
         mImage="https://m1.material.io/assets/0B5ZSepuCX1xOMmo2MDlJWjdwQlU/disabled-dark.png", 
         mTag = [
             {
-                Name:'Ex', 
+                Name:'Placeholder', 
                 LinkTo:'/', 
                 TextColor:'text-light-purle', 
-                BackgroundColor:'bg-dark-second'
+                BackgroundColor:'bg-dark-second',
+                Border:'border border-light-purle'
             }
         ], 
         mProyekTitle = "Placeholder", 
@@ -17,14 +18,11 @@ export default function ProyekCard(
     }
     ) {
     const generateTag = () => {
-        if (mTag.length === 0) {
-            return "TIDAK ADA PROJEK SAAT INI"
-        }
         let listTag = []
 
         mTag.forEach(e => {
             listTag.push(
-                <Link className= {`inline-block  ${e.BackgroundColor} rounded-full px-3 py-2 text-sm font-semibold  mr-2 mb-2 ${e.TextColor}`} to={e.LinkTo}>
+                <Link className= {`inline-block ${e.Border} ${e.BackgroundColor} rounded-full px-3 py-2 text-sm font-semibold  mr-2 mb-2 ${e.TextColor}`} to={e.LinkTo}>
                     #{e.Name}
                 </Link>
             )
