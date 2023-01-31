@@ -27,7 +27,7 @@ class Navigation extends Component {
       <>
         <Router>
           <div>
-            <Navbar className="lg:px-20 py-6 bg-gray-900 text-white">
+            <Navbar className="lg:px-20 py-6 bg-red-900 text-white">
               <Navbar.Brand to="/">
                 <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
                   Speedwagon
