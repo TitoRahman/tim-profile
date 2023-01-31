@@ -6,6 +6,7 @@ import {
   Outlet,
   Routes,
 } from "react-router-dom";
+import { Navbar } from "flowbite-react";
 
 import Home from "../pages/Home.jsx";
 import About from "../pages/About.jsx";
@@ -20,24 +21,32 @@ const navigation = [
   { name: "Contact", to: "/contact" },
 ];
 
-class Navbar extends Component {
+class Navigation extends Component {
   render() {
     return (
       <>
         <Router>
           <div>
-            {navigation.map((item) => (
-              <NavLink
-                key={item.name}
-                to={item.to}
-                className={({ isActive }) =>
-                  isActive ? "menu-active" : "menu-inactive"
-                }
-                end
-              >
-                {item.name}
-              </NavLink>
-            ))}
+            <Navbar className="lg:px-20 py-6 bg-gray-900 text-white">
+              <Navbar.Brand to="/">
+                <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+                  Speedwagon
+                </span>
+              </Navbar.Brand>
+              <Navbar.Toggle />
+              <Navbar.Collapse>
+                {navigation.map((item) => (
+                  <NavLink
+                    key={item.name}
+                    to={item.to}
+                    className={({ isActive }) => (isActive ? "true" : "false")}
+                    end
+                  >
+                    {item.name}
+                  </NavLink>
+                ))}
+              </Navbar.Collapse>
+            </Navbar>
           </div>
 
           <Outlet />
@@ -55,4 +64,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar;
+export default Navigation;
