@@ -29,7 +29,7 @@ export default function Proyek() {
     return <div className={cardContainerStyle}> {generateCard(n)} </div>
   }
   return (
-    <div className= 'flex flex-col text-center bg-dark-main pb-96 pt-20 px-20 items-center'>
+    <div className= 'flex flex-col text-center bg-gradient-to-b from-dark-main to-dark-second pb-96 pt-20 px-20 items-center'>
       <div>
         <div className={titleStyle}>
           RECENT
