@@ -9,7 +9,7 @@ export default function ProyekCard(
                 Name:'Placeholder', 
                 LinkTo:'/', 
                 TextColor:'text-light-purle', 
-                BackgroundColor:'bg-dark-second',
+                BackgroundColor:'second-dark',
                 Border:'border border-light-purle'
             }
         ], 
@@ -33,7 +33,7 @@ export default function ProyekCard(
 
     return (
       <div className='mx-3 my-4'>
-          <div className="max-w-xs rounded overflow-hidden shadow-lg bg-dark-second">
+          <div className="max-w-xs rounded overflow-hidden shadow-lg bg-main-dark">
               <img className="w-full" src={mImage} alt="Sunset in the mountains"/>
                 <div className="px-4 py-4">
                     <div className="font-extrabold text-xl mb-2 text-left text-white">
