@@ -4,10 +4,10 @@
 
 @layer components {
   .navbar-inactive {
-    @apply fixed w-full top-0 lg:px-20 px-6 py-2 text-white bg-transparent border-b-2 border-white border-opacity-10 shadow-lg;
+    @apply fixed w-full top-0 z-50 lg:px-20 px-6 py-2 text-white bg-transparent border-b-2 border-white border-opacity-10 shadow-lg;
   }
   .navbar-active {
-    @apply fixed w-full top-0 lg:px-20 px-6 py-2 text-white bg-main-dark border-b-2 border-white border-opacity-10 shadow-lg;
+    @apply fixed w-full top-0 z-50 lg:px-20 px-6 py-2 text-white bg-main-dark border-b-2 border-white border-opacity-10 shadow-lg;
   }
 
   .menu-inactive {
