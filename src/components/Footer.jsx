@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <>
       <Router>
-        <div className="gap-4 px-4 sm:px-6 lg:px-40 lg:py-20 py-10 bg-second-dark">
+        <div className="gap-4 px-4 sm:px-6 lg:px-40 lg:py-20 py-10 bg-second-dark border-t-2 border-white border-opacity-10">
           <div className="flex lg:flex-row flex-col place-content-between items-center ">
             <div>
               <h2 className="text-left text-2xl tracking-wider text-white">
@@ -79,7 +79,12 @@ const Footer = () => {
                 required={true}
                 className="w-80 mt-2"
               />
-              <Button className="mt-2 bg-light-purle w-80">send</Button>
+              <Button
+                color="light-purple"
+                className="mt-2 bg-light-purle text-white w-80"
+              >
+                send
+              </Button>
               <p className="mt-8 text-center lg:text-left text-secondt">
                 © 2023, Speedwagon teams.
               </p>

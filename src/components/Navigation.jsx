@@ -35,29 +35,6 @@ const Navigation = () => {
   return (
     <>
       <Router>
-        {/* <div className="bg-neutral-700">
-          <Navbar className={navbar ? "navbar-active" : "navbar-inactive"}>
-            <Navbar.Brand to="/">
-              <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-                Speedwagon
-              </span>
-            </Navbar.Brand>
-            <Navbar.Toggle />
-            <Navbar.Collapse>
-              {navigation.map((item) => (
-                <NavLink
-                  key={item.name}
-                  to={item.to}
-                  className={({ isActive }) => (isActive ? "true" : "false")}
-                  end
-                >
-                  {item.name}
-                </NavLink>
-              ))}
-            </Navbar.Collapse>
-          </Navbar>
-        </div> */}
-
         <Disclosure
           as="nav"
           className={navbar ? "navbar-active" : "navbar-inactive"}
@@ -110,16 +87,14 @@ const Navigation = () => {
                   </div>
                 </div>
               </div>
-              <Disclosure.Panel className="md:hidden pb-4">
+              <Disclosure.Panel className="md:hidden pb-4 bg-main-dark">
                 <div className="space-y-1 px-2 pt-2 pb-3 sm:px-3">
                   {navigation.map((item) => (
                     <NavLink
                       x-data={false}
                       key={item.name}
                       to={item.to}
-                      className={({ isActive }) =>
-                        isActive ? "menu-m-active" : "menu-m-inactive"
-                      }
+                      className="menu-m"
                       end
                     >
                       {item.name}
