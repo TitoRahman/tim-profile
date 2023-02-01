@@ -11,6 +11,7 @@ module.exports = {
         "dark-grayish-pink": "#22191F",
         "main-dark": "#1B1D21",
         "second-dark": "#111215",
+        secondt: "#a4a7b1",
       },
     },
   },

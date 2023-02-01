@@ -23,4 +23,8 @@
   .menu-m-active {
     @apply block px-4 py-2 text-sm font-semibold text-white text-left;
   }
+
+  .ic-rounded {
+    @apply rounded-full border-2 p-6 border-white border-opacity-10;
+  }
 }
