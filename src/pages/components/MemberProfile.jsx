@@ -4,11 +4,37 @@ export default function MemberProfile({
   MemberPhoto = 'https://as2.ftcdn.net/v2/jpg/02/14/74/61/1000_F_214746128_31JkeaP6rU0NzzzdFC4khGkmqc8noe6h.jpg',
   MemberAboutMe = 'about me!',
   MemberName = 'My Name!',
-  MemberRole = 'My Role!'
+  MemberRole = 'My Role!',
+  ListSkill = [{
+    Name : 'Placeholder',
+    Color : 'white',
+    Background : 'main-dark'
+  }]
 }) {
-  // const skillTag = {
-  //   FrontEnd : 
-  // }
+  
+  const roleTag = () => {
+    let styleOutput = []
+    ListSkill.forEach(e => {
+      let styling = `inline-block border-${e.Color} border-2 bg-${e.Background} rounded-full px-3 py-1 mt-2 text-sm font-semibold  mr-2 mb-2 text-${e.Color}`
+      switch (ListSkill.length){
+        case 1 :
+          styling += ' col-span-3'
+          break
+        case 2 :
+          styling += ' col-span-2'
+          break
+        case 3 :
+          styling += ' col-span-1'
+          break
+        default:
+          break
+      }
+      styleOutput.push(
+        <div className= {styling} >{e.Name}</div>
+      )
+    });
+    return styleOutput
+  }
 
   const responsiveSize = "lg:w-80 lg:h-80 sm:w-72 sm:h-72 h-72 w-48"
   return (
@@ -28,8 +54,8 @@ export default function MemberProfile({
         {MemberAboutMe.toLowerCase()}
       </div>
 
-      <div>
-        SKILL
+      <div className='grid grid-cols-3 content-center'>
+        {roleTag()}
       </div>
     </div>
   )
