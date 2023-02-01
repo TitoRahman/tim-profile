@@ -12,6 +12,19 @@ module.exports = {
         "main-dark": "#1B1D21",
         "second-dark": "#111215",
         secondt: "#a4a7b1",
+        gradient: {
+          100: "#12c2e9",
+          200: "#c471ed",
+          300: "#f64f59",
+        },
+        gradient2: {
+          100: "#12c2e9",
+          200: "#c471ed",
+          300: "#f64f59",
+        },
+      },
+      backgroundImage: {
+        "hero-slider1": "url('/src/assets/img/sliders/01.jpg')",
       },
     },
   },
