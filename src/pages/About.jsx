@@ -1,10 +1,10 @@
 import React from 'react'
 import MemberProfile from './components/MemberProfile'
-import { Carousel } from 'flowbite-react'
+import { Button, Carousel, TextInput } from 'flowbite-react'
 export default function About() {
   const titleStyle = 'text-white font-bold text-5xl mt-10 pb-1'
   return (
-    <div className='bg-main-dark pt-20 text-white flex flex-col gap-5 pb-96'>
+    <div className='bg-main-dark pt-20 text-white flex flex-col gap-5 pb-20'>
       <div>
         <div className={titleStyle}>
           OUR MEMBER
@@ -18,7 +18,7 @@ export default function About() {
         </div>
       </div>
       <div>
-        <div className={titleStyle}>
+        <div className={titleStyle + ' mb-5'}>
           WE HAVE ACHIEVED
         </div>   
         <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
@@ -38,8 +38,19 @@ export default function About() {
           </Carousel>
         </div>
       </div>
-      <div className={titleStyle}>
-        BE OUR PARTNER
+      <div >
+        <div className={titleStyle + ' mb-5'}>
+          BE OUR PARTNER
+        </div>
+        <div className='grid grid-cols-2 items-center justify-items-center'>
+          <img className='object-cover w-full h-full' alt='SomeoneWorking' src='https://lh3.googleusercontent.com/AYFJlOWbvB897Wn7khxe3TUZjbTQ9isBCbgi_9b7F1Hg0oq-wnS7MeTKLLmhPXXh1OIJ9b8Df5cYNp8Kn9qYMEE'/>
+          <div className='flex flex-row gap-2 w-full bg-second-dark h-full items-center p-20'>
+            <TextInput placeholder='SEND US YOUR REQUEST!' className='text-center w-full'/>
+            <Button className='w-fit justify-self-center'>JOIN!</Button>
+          </div>
+          
+          
+        </div>
       </div>
     </div>
   )

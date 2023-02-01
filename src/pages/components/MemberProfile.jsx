@@ -16,19 +16,6 @@ export default function MemberProfile({
     let styleOutput = []
     ListSkill.forEach(e => {
       let styling = `inline-block border-${e.Color} border-2 bg-${e.Background} rounded-full px-3 py-1 mt-2 text-sm font-semibold  mr-2 mb-2 text-${e.Color}`
-      switch (ListSkill.length){
-        case 1 :
-          styling += ' col-span-3'
-          break
-        case 2 :
-          styling += ' col-span-2'
-          break
-        case 3 :
-          styling += ' col-span-1'
-          break
-        default:
-          break
-      }
       styleOutput.push(
         <div className= {styling} >{e.Name}</div>
       )
@@ -54,7 +41,7 @@ export default function MemberProfile({
         {MemberAboutMe.toLowerCase()}
       </div>
 
-      <div className='grid grid-cols-3 content-center'>
+      <div className='flex flex-cols content-center items-center'>
         {roleTag()}
       </div>
     </div>
