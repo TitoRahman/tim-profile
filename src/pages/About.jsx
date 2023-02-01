@@ -9,8 +9,10 @@ export default function About() {
         <div className={titleStyle}>
           OUR MEMBER
         </div>
-        <div className='mt-3 grid grid-cols-3'>
-          <MemberProfile/>
+        <div className='mt-3 grid lg:grid-cols-3 sm:grid-cols-2 gap-5 '>
+          <div className='lg:col-span-1 sm:col-span-3'>
+            <MemberProfile/>
+          </div>
           <MemberProfile/>
           <MemberProfile/>
         </div>
