@@ -9,14 +9,6 @@ import Projects from "./CompProjects";
 import Clients from "./CompClients";
 
 const Home = () => {
-  const slidersData = [
-    {
-      mTitle: "we provide solutions and ideas for your web app",
-      mDescription:
-        "we are always ready to provide solutions for your web app. we are experienced in web app projects since 2019",
-      mLink: "/about",
-    },
-  ];
   const aboutUsData = {
     mDescription:
       "Speedwagon is a professional web design and development company that creates innovative and high-quality digital solutions for businesses. Our team of experts delivers stunning websites, powerful apps, and engaging designs that meet clients' needs and goals. With a commitment to excellence, we provide the best possible experience for our clients.",
@@ -42,12 +34,6 @@ const Home = () => {
       mLogo: FaPaintBrush,
       mTitle: "Graphic Design",
       mDescription: "we design assets for your project",
-    },
-  ];
-  const proyekData = [
-    {
-      mTitle: "Genius",
-      mDescription: "Online learning application",
     },
   ];
   const clientData = {
