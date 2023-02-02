@@ -4,7 +4,68 @@ import ProyekCard from './components/ProyekCard'
 export default function Proyek() {
   const titleStyle = 'text-white font-bold text-5xl mt-10 pb-1'
   const labelStyle = 'text-gray-400 text-bg'
-
+  const proyekData = [{
+    mImage: 'ss',
+    mTag:[{
+      Name:'Kotlin', 
+      LinkTo:'/', 
+      TextColor:'color-indigo-800', //Color-[Nama Warna]-[Ketebalan] 
+      BackgroundColor:'second-dark',
+      Border:'border color-indigo-800' 
+    }], 
+    mProyekTitle:'Genius',
+    mProyekDescription:'Aplikasi mobile'
+  },{
+    mImage: 'ss',
+    mTag:[{
+      Name:'Javascript', 
+      LinkTo:'/', 
+      TextColor:'color-Amber-300', //Color-[Nama Warna]-[Ketebalan] 
+      BackgroundColor:'second-dark',
+      Border:'border color-Amber-300' 
+    },{
+      Name:'CSS', 
+      LinkTo:'/', 
+      TextColor:'color-Purple-700', //Color-[Nama Warna]-[Ketebalan] 
+      BackgroundColor:'second-dark',
+      Border:'border color-Purple-700' 
+    },{
+      Name:'HTML', 
+      LinkTo:'/', 
+      TextColor:'color-red-500', //Color-[Nama Warna]-[Ketebalan] 
+      BackgroundColor:'second-dark',
+      Border:'border color-red-500' 
+    }], 
+    mProyekTitle:'tim-profile',
+    mProyekDescription:'Website'
+  },
+  {
+    mImage: 'ss',
+    mTag:[{
+      Name:'Javascript', 
+      LinkTo:'/', 
+      TextColor:'color-Amber-300', //Color-[Nama Warna]-[Ketebalan] 
+      BackgroundColor:'second-dark',
+      Border:'border color-Amber-300' 
+    },{
+      Name:'CSS', 
+      LinkTo:'/', 
+      TextColor:'color-Purple-700', //Color-[Nama Warna]-[Ketebalan] 
+      BackgroundColor:'second-dark',
+      Border:'border color-Purple-700' 
+    },
+    {
+      Name:'HTML', 
+      LinkTo:'/', 
+      TextColor:'color-red-500', //Color-[Nama Warna]-[Ketebalan] 
+      BackgroundColor:'second-dark',
+      Border:'border color-red-500' 
+    }
+    ], 
+    mProyekTitle:'e-tiket-bus-tailwind',
+    mProyekDescription:'Website'
+  }
+]
   const generateCard = (n) => {
     if (n === 0){
       return <>TIDAK ADA PROJECT</>
