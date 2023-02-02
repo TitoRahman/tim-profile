@@ -50,24 +50,20 @@ const Home = () => {
       mDescription: "Online learning application",
     },
   ];
-  const clientData = [
-    {
-      mDescription: "",
-      mClientList: [
-        "https://logosmarcas.net/wp-content/uploads/2021/11/Meta-Logo.png",
-        "https://1.bp.blogspot.com/-QX9V30yKSnY/XnK1EwNfPoI/AAAAAAAASbw/ynfzj_RgdOU7DkpYIXRC18GWMu6kKCtkQCLcBGAsYHQ/s1600/GoPay.png",
-        "https://th.bing.com/th/id/R.44bb9ce0af9de6ca7dfbba7428d7c4f4?rik=zB0NbwKqALur8g&riu=http%3a%2f%2f1000marcas.net%2fwp-content%2fuploads%2f2020%2f10%2fFiverr-Logo.png&ehk=h45sJ0i%2bwIYggBVKSdxRuIfOiyPZbh3HkDqPm48LSBY%3d&risl=&pid=ImgRaw&r=0",
-        "https://www.mikroskil.ac.id/pustaka/template/default/img/logo.png",
-        "https://www.mikroskil.ac.id/pustaka/template/default/img/logo.png",
-        "https://1.bp.blogspot.com/-rmLjPMKtx7k/XnK070LoSRI/AAAAAAAASbs/i2kIFlIzh0MUpnLZzeFoXgYN-a0EpZRvwCLcBGAsYHQ/s1600/OVO.png",
-        "https://th.bing.com/th/id/OIP.-eB1621jnMV-8Mpdrzxh9gHaIV?pid=ImgDet&rs=1",
-        "https://th.bing.com/th/id/OIP.-eB1621jnMV-8Mpdrzxh9gHaIV?pid=ImgDet&rs=1",
-        "https://th.bing.com/th/id/OIP.-eB1621jnMV-8Mpdrzxh9gHaIV?pid=ImgDet&rs=1",
-        "https://logospng.org/download/spotify/logo-spotify-icon-4096.png",
-        "https://logodownload.org/wp-content/uploads/2017/11/telegram-logo-8.png",
-      ],
-    },
-  ];
+  const clientData = {
+    mDescription:
+      "Our clients are the driving force behind everything we do at Speedwagon and we strive to deliver personalized digital solutions to meet their needs and goals.",
+    mClientList: [
+      "https://logosmarcas.net/wp-content/uploads/2021/11/Meta-Logo.png",
+      "https://1.bp.blogspot.com/-QX9V30yKSnY/XnK1EwNfPoI/AAAAAAAASbw/ynfzj_RgdOU7DkpYIXRC18GWMu6kKCtkQCLcBGAsYHQ/s1600/GoPay.png",
+      "https://th.bing.com/th/id/R.44bb9ce0af9de6ca7dfbba7428d7c4f4?rik=zB0NbwKqALur8g&riu=http%3a%2f%2f1000marcas.net%2fwp-content%2fuploads%2f2020%2f10%2fFiverr-Logo.png&ehk=h45sJ0i%2bwIYggBVKSdxRuIfOiyPZbh3HkDqPm48LSBY%3d&risl=&pid=ImgRaw&r=0",
+      "https://www.mikroskil.ac.id/pustaka/template/default/img/logo.png",
+      "https://www.mikroskil.ac.id/pustaka/template/default/img/logo.png",
+      "https://1.bp.blogspot.com/-rmLjPMKtx7k/XnK070LoSRI/AAAAAAAASbs/i2kIFlIzh0MUpnLZzeFoXgYN-a0EpZRvwCLcBGAsYHQ/s1600/OVO.png",
+      "https://logospng.org/download/spotify/logo-spotify-icon-4096.png",
+      "https://logodownload.org/wp-content/uploads/2017/11/telegram-logo-8.png",
+    ],
+  };
   return (
     <>
       <div className="bg-second-dark">
@@ -83,7 +79,10 @@ const Home = () => {
         {/* List Design or Project */}
         <Projects />
         {/* Client */}
-        <Clients />
+        <Clients
+          mDescription={clientData.mDescription}
+          clientData={clientData}
+        />
       </div>
     </>
   );
