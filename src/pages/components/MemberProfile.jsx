@@ -28,7 +28,7 @@ export default function MemberProfile({
     <div className='flex flex-col items-center hover:animate-pulse hover:cursor-pointer'>
       {/* PROFILE IMAGE */}
       <div className={`rounded-full border overflow-hidden items-center flex flex-row mb-3 ${responsiveSize}`}>
-        <img alt='Member' src={MemberPhoto} className={` ${responsiveSize} object-cover object-center`}></img>
+        <img alt='Member' src={MemberPhoto} className={` ${responsiveSize} object-cover object-top`}></img>
       </div>
       <div className='font-bold text-2xl'>
         {MemberName.toUpperCase()}
