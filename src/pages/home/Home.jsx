@@ -1,9 +1,12 @@
 import React from "react";
 
+import { Carousel } from "flowbite-react";
+
 // Call Component Home
 import Sliders from "./CompSliders";
 import AboutUs from "./CompAboutUs";
 import Features from "./CompFeatures";
+import Projects from "./CompProjects";
 import Clients from "./CompClients";
 
 const Home = () => {
@@ -17,7 +20,7 @@ const Home = () => {
         {/* Our Best At */}
         <Features />
         {/* List Design or Project */}
-        <div className="layout text-white text-5xl">List Design or Project</div>
+        <Projects />
         {/* Client */}
         <Clients />
       </div>
