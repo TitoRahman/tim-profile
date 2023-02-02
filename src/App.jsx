@@ -1,7 +1,7 @@
 import "./App.css";
 import "./assets/files/custom.css";
-import Navigation from "./components/Navigation";
-import Footer from "./components/Footer";
+import Navigation from "./pages/components/Navigation";
+import Footer from "./pages/components/Footer";
 
 function App() {
   return (
