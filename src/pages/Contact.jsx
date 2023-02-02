@@ -1,5 +1,7 @@
 import React from 'react'
 import {Button, Textarea, TextInput} from 'flowbite-react'
+import {AiOutlineMail, AiFillGithub, AiFillPhone}  from 'react-icons/ai'
+import {FaFacebookF, FaInstagram} from 'react-icons/fa'
 export default function Contact() {
   return (
     <div className='bg-gradient-to-b from-main-dark to-second-dark pb-96 pt-40 text-white lg:text-left px-20 sm:text-center'>
@@ -38,8 +40,31 @@ export default function Contact() {
             <Button className='w-40 self-end'>SEND!</Button>
           </form>
         </div>
-        <div className='border border-white border-4 p-5 rounded-xl mt-8 basis-1/4 lg:w-2/4 grow'>
-          aa
+        <div className=' p-5 rounded-xl mt-8 basis-1/4 lg:w-2/4 grow gap-5 flex flex-col'>
+          <div className='gap-2 flex flex-col lg:items-start items-center '>
+            <div className='flex lg:items-start items-center gap-2 text-[1.2rem] font-medium justify-between'>
+              <AiOutlineMail size={'3rem'} className='border border-2 p-2 rounded-full'/> siiizah@speedwagon.co.id
+            </div>
+          </div>
+          <div className='gap-2 flex flex-col lg:items-start items-center '>
+            <div className='flex lg:items-start items-center gap-2 text-[1.2rem] font-medium justify-between'>
+              <AiFillGithub size={'3rem'} className='border border-2 p-2 rounded-full'/> speedwagon
+            </div>
+          </div>
+          <div className='gap-2 flex flex-col lg:items-start items-center '>
+            <div className='flex lg:items-start items-center gap-2 text-[1.2rem] font-medium justify-between'>
+              <FaFacebookF size={'3rem'} className='border border-2 p-2 rounded-full'/> SpeedwagonOfficial
+            </div>
+          </div>
+          <div className='gap-2 flex flex-col lg:items-start items-center '>
+            <div className='flex lg:items-start items-center gap-2 text-[1.2rem] font-medium justify-between'>
+              <FaInstagram size={'3rem'} className='border border-2 p-2 rounded-full'/> SpeedwagonOfficial
+            </div>
+          </div><div className='gap-2 flex flex-col lg:items-start items-center '>
+            <div className='flex lg:items-start items-center gap-2 text-[1.2rem] font-medium justify-between'>
+              <AiFillPhone size={'3rem'} className='border border-2 p-2 rounded-full'/> 0692-423-486
+            </div>
+          </div>
         </div>
       </div>
     </div>
