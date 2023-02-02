@@ -1,8 +1,12 @@
 import React from 'react'
 import MemberProfile from './components/MemberProfile'
-import { Button, Carousel, TextInput } from 'flowbite-react'
+import { Carousel } from 'flowbite-react'
+import {BsFillArrowRightSquareFill} from 'react-icons/bs'
+import { Link } from 'react-router-dom'
+import {FaHandshake} from 'react-icons/fa'
+import Benefits from './components/Benefits'
 export default function About() {
-  const titleStyle = 'text-white font-bold text-5xl mt-10 pb-1'
+  const titleStyle = 'text-white font-bold text-4xl mt-10 pb-1'
   return (
     <div className='bg-main-dark pt-20 text-white flex flex-col gap-5 pb-20'>
       <div>
@@ -42,15 +46,15 @@ export default function About() {
         <div className={titleStyle + ' mb-5'}>
           BE OUR PARTNER
         </div>
-        <div className='grid grid-cols-2 items-center justify-items-center'>
-          <img className='object-cover w-full h-full' alt='SomeoneWorking' src='https://lh3.googleusercontent.com/AYFJlOWbvB897Wn7khxe3TUZjbTQ9isBCbgi_9b7F1Hg0oq-wnS7MeTKLLmhPXXh1OIJ9b8Df5cYNp8Kn9qYMEE'/>
-          <div className='flex flex-row gap-2 w-full bg-second-dark h-full items-center p-20'>
-            <TextInput placeholder='SEND US YOUR REQUEST!' className='text-center w-full'/>
-            <Button className='w-fit justify-self-center'>JOIN!</Button>
+        <div className='grid grid-cols-2'>
+          <div className='bg-white'>
+            <Benefits/>
           </div>
-          
-          
-        </div>
+          <div className='grid grid-cols-1 gap-2 w-full bg-second-dark content-center justify-items-center'>
+            <Link className='hover:cursor-pointer' to={'/contact'}><BsFillArrowRightSquareFill color='white' size={'7rem'}/></Link>
+            <Link className='font-bold text-2xl hover:cursor-pointer'  to={'/contact'}>JOIN US NOW!</Link>
+          </div>        
+         </div>
       </div>
     </div>
   )
