@@ -4,7 +4,18 @@ import ProyekCard from './components/ProyekCard'
 export default function Proyek() {
   const titleStyle = 'text-white font-bold text-5xl mt-10 pb-1'
   const labelStyle = 'text-gray-400 text-bg'
-
+  const proyekData = [{
+    mImage: 'ss',
+    mTag:{
+      Name:'Placeholder', 
+      LinkTo:'/', 
+      TextColor:'text-light-purle', 
+      BackgroundColor:'second-dark',
+      Border:'border border-light-purle'
+    }, 
+    mProyekTitle:'Genius',
+    mProyekDescription:''
+  }]
   const generateCard = (n) => {
     if (n === 0){
       return <>TIDAK ADA PROJECT</>
