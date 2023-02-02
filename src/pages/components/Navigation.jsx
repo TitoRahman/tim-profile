@@ -9,11 +9,11 @@ import {
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
-import Home from "../pages/Home.jsx";
-import About from "../pages/About.jsx";
-import Proyek from "../pages/Proyek.jsx";
-import Contact from "../pages/Contact.jsx";
-import NotFound from "../pages/NotFound.jsx";
+import Home from "../home/Home.jsx";
+import About from "../About.jsx";
+import Proyek from "../Proyek.jsx";
+import Contact from "../Contact.jsx";
+import NotFound from "../NotFound.jsx";
 
 const navigation = [
   { name: "Home", to: "/" },
