@@ -43,28 +43,26 @@ const Footer = () => {
               <div className="flex items-center">
                 <SlLocationPin className="h-6 w-6" />
                 <div className="ml-6">
-                  <h6 className="font-semibold ">Lorem Ipsum</h6>
+                  <h6 className="font-semibold ">Officeal Address</h6>
                   <p className="text-secondt max-w-xs">
-                    Lorem Ipsum is simply dummy text
+                    Jl. Seksama suka bersama No. 70 Medan
                   </p>
                 </div>
               </div>
               <div className="flex items-center">
                 <SlEnvolope className="h-6 w-6" />
                 <div className="ml-6">
-                  <h6 className="font-semibold ">Lorem Ipsum</h6>
+                  <h6 className="font-semibold ">Email Us</h6>
                   <p className="text-secondt max-w-xs">
-                    Lorem Ipsum is simply dummy text
+                    contact@speedwagon.com
                   </p>
                 </div>
               </div>
               <div className="flex items-center">
                 <SlPhone className="h-6 w-6" />
                 <div className="ml-6">
-                  <h6 className="font-semibold ">Lorem Ipsum</h6>
-                  <p className="text-secondt max-w-xs">
-                    Lorem Ipsum is simply dummy text
-                  </p>
+                  <h6 className="font-semibold ">Call Us</h6>
+                  <p className="text-secondt max-w-xs">+62 863-1851-9527</p>
                 </div>
               </div>
             </div>
