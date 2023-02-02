@@ -67,26 +67,22 @@ export default function Proyek() {
   }
 ]
   const generateCard = (n) => {
-    if (n === 0){
-      return <>TIDAK ADA PROJECT</>
-    }
     let cardList = []
-    for (let i = 0; i< n ;i++){
-      cardList.push(<ProyekCard/>)
-    } return cardList
+    proyekData.forEach((e, index) => {
+        if(index < n) {
+          cardList.push(
+            <ProyekCard
+              mProyekDescription={e.mProyekDescription}
+              mProyekTitle={e.mProyekTitle}
+            />
+            )
+        }
+    })
+    return cardList
   }
 
   const cardContainer = (n) => {
-    let cardContainerStyle = 'grid items-center overflow-auto'
-    if (n >= 4){
-      cardContainerStyle += ' lg:grid-cols-4 sm:grid-cols-2'
-    } else if (n === 3) {
-      cardContainerStyle += ' lg:grid-cols-3 sm:grid-cols-2'
-    } else if (n === 2) {
-      cardContainerStyle += ' grid-cols-2'
-    } else if (n === 1) {
-      cardContainerStyle += ' grid-cols-1'
-    }
+    let cardContainerStyle = 'grid grid-cols-3 w-full text-center items-center overflow-auto'
     return <div className={cardContainerStyle}> {generateCard(n)} </div>
   }
   return (
@@ -98,7 +94,7 @@ export default function Proyek() {
         <div className={labelStyle}>
           our most recent project that we created!
         </div>
-        {cardContainer(1)}
+        {cardContainer(2)}
       </div>
       <div>
         <div className={titleStyle}>
@@ -107,7 +103,7 @@ export default function Proyek() {
         <div className={labelStyle}>
           a work-in-progress project that we are currently working on!
         </div>
-        {cardContainer(2)}
+        {cardContainer(1)}
       </div>
       <div>
         <div className={titleStyle}>
