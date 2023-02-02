@@ -1,5 +1,7 @@
 import React from "react";
 import { Button } from "flowbite-react";
+import NumberCounter from "number-counter";
+
 export default function CompAboutUs() {
   return (
     <div className="layout items-center flex lg:flex-row flex-col place-content-between">
@@ -35,7 +37,11 @@ export default function CompAboutUs() {
           <div className="lg:happy-client border-dashed border-2 border-light-purle p-2 rounded-lg">
             <div className=" bg-white p-8 rounded-lg">
               <div className="text-main-dark flex justify-center">
-                <span className="text-4xl font-extrabold mr-2">20</span>
+                <NumberCounter
+                  end={24}
+                  delay={3}
+                  className="text-4xl font-extrabold mr-2"
+                />
                 <span className="mt-2 font-semibold">Happy Clients</span>
               </div>
             </div>
@@ -43,7 +49,11 @@ export default function CompAboutUs() {
           <div className="lg:success-project border-dashed border-2 border-light-purle p-2 rounded-lg">
             <div className=" bg-main-dark p-8 rounded-lg">
               <div className="text-white flex justify-center">
-                <span className="text-4xl font-extrabold mr-2">69</span>
+                <NumberCounter
+                  end={63}
+                  delay={3}
+                  className="text-4xl font-extrabold mr-2"
+                />
                 <span className="mt-2 font-semibold">Success Projects</span>
               </div>
             </div>
