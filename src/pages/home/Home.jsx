@@ -1,4 +1,5 @@
 import React from "react";
+import { FaBorderAll, FaPaintBrush, FaDev, FaServer } from "react-icons/fa";
 
 // Call Component Home
 import Sliders from "./CompSliders";
@@ -23,27 +24,26 @@ const Home = () => {
   };
   const featuresData = [
     {
-      mLogo: "",
+      mLogo: FaBorderAll,
       mTitle: "UI/UX design",
       mDescription: "We design a good UI/UX according to your needs",
     },
     {
-      mLogo: "",
+      mLogo: FaDev,
       mTitle: "Web App Development",
       mDescription: "We develop Web App according to your needs",
     },
     {
-      mLogo: "",
+      mLogo: FaServer,
       mTitle: "Maintenance",
       mDescription: "we perform maintenance for your web app project",
     },
     {
-      mLogo: "",
+      mLogo: FaPaintBrush,
       mTitle: "Graphic Design",
       mDescription: "we design assets for your project",
     },
   ];
-
   const proyekData = [
     {
       mTitle: "Genius",
@@ -79,7 +79,7 @@ const Home = () => {
           mLink={aboutUsData.mLink}
         />
         {/* Our Best At */}
-        <Features />
+        <Features featuresData={featuresData} />
         {/* List Design or Project */}
         <Projects />
         {/* Client */}
