@@ -16,26 +16,26 @@ const Home = () => {
     mLink :'/about'
   }]
   const aboutUsData = {
-    mDescription,
+    mDescription : '',
     mLink:'/about'
   }
   const featuresData =[{
-    mLogo,
+    mLogo : '',
     mTitle : 'UI/UX design',
     mDescription : 'We design a good UI/UX according to your needs'
   },
   {
-    mLogo,
+    mLogo : '',
     mTitle : 'Web App Development',
     mDescription : 'We develop Web App according to your needs'
   },
   {
-    mLogo,
+    mLogo : '',
     mTitle : 'Maintenance',
     mDescription : 'we perform maintenance for your web app project'
   },
   {
-    mLogo,
+    mLogo : '',
     mTitle : 'Graphic Design',
     mDescription : 'we design assets for your project'
   }]
@@ -45,7 +45,7 @@ const Home = () => {
     mDescription : 'Online learning application'
   }]
   const clientData = [{
-    mDescription,
+    mDescription : '',
     mClientList : [
       'https://logosmarcas.net/wp-content/uploads/2021/11/Meta-Logo.png',
       'https://1.bp.blogspot.com/-QX9V30yKSnY/XnK1EwNfPoI/AAAAAAAASbw/ynfzj_RgdOU7DkpYIXRC18GWMu6kKCtkQCLcBGAsYHQ/s1600/GoPay.png',
