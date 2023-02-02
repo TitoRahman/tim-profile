@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function CompClients() {
+const CompClients = (props) => {
   return (
     <div className="layout items-center flex lg:flex-row flex-col gap-8 lg:gap-36">
       <div className="flex flex-col text-left gap-8">
@@ -12,69 +12,17 @@ export default function CompClients() {
             Our Clients
           </h2>
         </div>
-        <p className=" max-w-md text-secondt leading-8">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
-        </p>
+        <p className="max-w-lg text-secondt leading-8">{props.mDescription}</p>
       </div>
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-        <div className="border-partners">
-          <img
-            src={require("./../../assets/img/partners/Cisco.png")}
-            alt="..."
-            className="w-full"
-          />
-        </div>
-        <div className="border-partners">
-          <img
-            src={require("./../../assets/img/partners/Cisco.png")}
-            alt="..."
-            className="w-full"
-          />
-        </div>
-        <div className="border-partners">
-          <img
-            src={require("./../../assets/img/partners/Cisco.png")}
-            alt="..."
-            className="w-full"
-          />
-        </div>
-        <div className="border-partners">
-          <img
-            src={require("./../../assets/img/partners/Cisco.png")}
-            alt="..."
-            className="w-full"
-          />
-        </div>
-        <div className="border-partners">
-          <img
-            src={require("./../../assets/img/partners/Cisco.png")}
-            alt="..."
-            className="w-full"
-          />
-        </div>
-        <div className="border-partners">
-          <img
-            src={require("./../../assets/img/partners/Cisco.png")}
-            alt="..."
-            className="w-full"
-          />
-        </div>
-        <div className="border-partners">
-          <img
-            src={require("./../../assets/img/partners/Cisco.png")}
-            alt="..."
-            className="w-full"
-          />
-        </div>
-        <div className="border-partners">
-          <img
-            src={require("./../../assets/img/partners/Cisco.png")}
-            alt="..."
-            className="w-full"
-          />
-        </div>
+        {props.clientData.mClientList.map((item, index) => (
+          <div className="border-partners flex items-center" key={index}>
+            <img key={index} src={item} alt="..." className="w-40" />
+          </div>
+        ))}
       </div>
     </div>
   );
-}
+};
+
+export default CompClients;

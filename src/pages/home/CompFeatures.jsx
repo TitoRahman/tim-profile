@@ -1,7 +1,6 @@
 import React from "react";
-import { FaPaintBrush } from "react-icons/fa";
 
-export default function CompFeatures() {
+const CompFeatures = (props) => {
   return (
     <div className="layout">
       <div className="grid justify-items-center">
@@ -12,40 +11,17 @@ export default function CompFeatures() {
           We are a new digital product development agency
         </h2>
       </div>
-      <div className="flex flex-col lg:flex-row gap-4 mt-8">
-        <div className="border-features">
-          <FaPaintBrush size="32" color="white" />
-          <h6 className="text-white text-xl font-semibold">Graphic Design</h6>
-          <p className="text-secondt">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-        </div>
-        <div className="border-features">
-          <FaPaintBrush size="32" color="white" />
-          <h6 className="text-white text-xl font-semibold">Graphic Design</h6>
-          <p className="text-secondt">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-        </div>
-        <div className="border-features">
-          <FaPaintBrush size="32" color="white" />
-          <h6 className="text-white text-xl font-semibold">Graphic Design</h6>
-          <p className="text-secondt">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-        </div>
-        <div className="border-features">
-          <FaPaintBrush size="32" color="white" />
-          <h6 className="text-white text-xl font-semibold">Graphic Design</h6>
-          <p className="text-secondt">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-        </div>
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 mt-8">
+        {props.featuresData.map((item, index, mLogo) => (
+          <div className="border-features" key={index}>
+            <item.mLogo size="32" color="white" />
+            <h6 className="text-white text-xl font-semibold">{item.mTitle}</h6>
+            <p className="text-secondt">{item.mDescription}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
-}
+};
+
+export default CompFeatures;

@@ -1,8 +1,7 @@
 import React from "react";
 
-import { Carousel } from "flowbite-react";
 import ProyekCard from "../components/ProyekCard";
-export default function CompProjects() {
+const CompProjects = () => {
   return (
     <div className="layout">
       <div className="grid justify-items-center">
@@ -11,11 +10,12 @@ export default function CompProjects() {
           We are a new digital product development agency
         </h2>
       </div>
-      <div className="h-auto">
-        <Carousel>
-          <ProyekCard />
-        </Carousel>
+      <div className="h-auto mt-8 flex flex-col lg:flex-row justify-center">
+        <ProyekCard className="justify-center" />
+        <ProyekCard />
+        <ProyekCard />
       </div>
     </div>
   );
-}
+};
+export default CompProjects;

@@ -1,8 +1,8 @@
 import React from "react";
 import { Button } from "flowbite-react";
 import NumberCounter from "number-counter";
-
-export default function CompAboutUs() {
+import { Link } from "react-router-dom";
+const CompAboutUs = (props) => {
   return (
     <div className="layout items-center flex lg:flex-row flex-col place-content-between">
       <div className="flex flex-col text-left gap-8">
@@ -14,18 +14,15 @@ export default function CompAboutUs() {
             OUR COMPANY
           </h2>
         </div>
-        <p className=" max-w-md text-secondt leading-8">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
-        </p>
-        <Button
-          color="white"
-          className="border border-white text-white w-40 h-20"
-        >
-          Read More
-        </Button>
+        <p className=" max-w-md text-secondt leading-8">{props.mDescription}</p>
+        <Link to={props.mLink}>
+          <Button
+            color="white"
+            className="border border-white text-white w-40 h-20"
+          >
+            Read More
+          </Button>
+        </Link>
       </div>
       <div className="relative mt-10 lg:mt-0">
         <img
@@ -62,4 +59,6 @@ export default function CompAboutUs() {
       </div>
     </div>
   );
-}
+};
+
+export default CompAboutUs;
